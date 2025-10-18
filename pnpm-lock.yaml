@@ -11,6 +11,13 @@ importers:
       '@sourcegraph/amp-sdk':
         specifier: 0.1.0-3e67faf1b0e66cf0d3bf2985979efbcac0554a79
         version: 0.1.0-3e67faf1b0e66cf0d3bf2985979efbcac0554a79
+    devDependencies:
+      '@types/node':
+        specifier: ^24.8.1
+        version: 24.8.1
+      typescript:
+        specifier: ^5.6.3
+        version: 5.9.3
 
 packages:
 
@@ -94,10 +101,21 @@ packages:
     resolution: {integrity: sha512-dzPhMcs3Dn70zEfd/fk+E1mK+CrPpot7jylQJhTBcsVVogtN5eTpZtKUPwllXvyBUN328RnPOQnFn+dZkV7fFg==}
     engines: {node: '>=18'}
 
-  '@sourcegraph/amp@0.0.1760745707-g3750ff':
-    resolution: {integrity: sha512-0x/JSqnAFf/OS0VThfQK1pPyil4zutzZcB+mZWJsks/Punx6t568MOtlQhIaVUUE1ElL5mIDPewSJ9jREm9Pww==}
+  '@sourcegraph/amp@0.0.1759502872-g3e67fa':
+    resolution: {integrity: sha512-Z74bNMy8g8aB6pNETuK22joj0RFwysE8/NtYZbSbt8HH01qX+kysEqkkKSVnbwj0X5OLsneIhI8pGdfIVzPDZw==}
     engines: {node: '>=20'}
     hasBin: true
+
+  '@types/node@24.8.1':
+    resolution: {integrity: sha512-alv65KGRadQVfVcG69MuB4IzdYVpRwMG/mq8KWOaoOdyY617P5ivaDiMCGOFDWD2sAn5Q0mR3mRtUOgm99hL9Q==}
+
+  typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@7.14.0:
+    resolution: {integrity: sha512-QQiYxHuyZ9gQUIrmPo3IA+hUl4KYk8uSA7cHrcKd/l3p1OTpZcM0Tbp9x7FAtXdAYhlasd60ncPpgu6ihG6TOA==}
 
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
@@ -157,11 +175,19 @@ snapshots:
 
   '@sourcegraph/amp-sdk@0.1.0-3e67faf1b0e66cf0d3bf2985979efbcac0554a79':
     dependencies:
-      '@sourcegraph/amp': 0.0.1760745707-g3750ff
+      '@sourcegraph/amp': 0.0.1759502872-g3e67fa
       zod: 3.25.76
 
-  '@sourcegraph/amp@0.0.1760745707-g3750ff':
+  '@sourcegraph/amp@0.0.1759502872-g3e67fa':
     dependencies:
       '@napi-rs/keyring': 1.1.9
+
+  '@types/node@24.8.1':
+    dependencies:
+      undici-types: 7.14.0
+
+  typescript@5.9.3: {}
+
+  undici-types@7.14.0: {}
 
   zod@3.25.76: {}
